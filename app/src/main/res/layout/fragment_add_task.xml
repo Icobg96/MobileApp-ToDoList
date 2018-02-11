@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.ico.todolist.AddTask">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Add Task"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        tools:text="Add Task" />
+
+    <ListView
+        android:id="@+id/addFragmentListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.75">
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/addFragmentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.25"
+        android:ems="10"
+        android:hint="@string/enter_task"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/addFragmentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.25"
+        android:elevation="0dp"
+        android:text="@string/add_task"
+        android:textSize="25sp" />
+</LinearLayout>
